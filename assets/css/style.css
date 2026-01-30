@@ -14,7 +14,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
   background:
     radial-gradient(900px 650px at 15% 0%, rgba(89,193,255,0.18) 0%, rgba(11,15,20,0) 60%),
     radial-gradient(1100px 780px at 90% 10%, rgba(124,242,154,0.12) 0%, rgba(11,15,20,0) 55%),
@@ -74,12 +74,12 @@ main{padding:34px 0 60px}
     linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
   box-shadow: var(--shadow);
 }
-.hero h1{margin:0 0 10px; line-height:1.12; font-size: clamp(28px, 4vw, 46px)}
+.hero h1{margin:0 0 10px; line-height:1.08; font-size: clamp(30px, 4vw, 48px); font-family: "Space Grotesk", Inter, system-ui, sans-serif; letter-spacing:-0.6px}
 .hero p{margin:0 0 18px; color:var(--muted); max-width:70ch}
 .hero-actions{display:flex; gap:12px; flex-wrap:wrap}
 
 /* Sections */
-.section-title{margin:34px 0 10px; font-size:22px}
+.section-title{margin:34px 0 10px; font-size:22px; font-family: "Space Grotesk", Inter, system-ui, sans-serif; letter-spacing:-0.2px}
 
 .grid{
   display:grid; gap:16px;
