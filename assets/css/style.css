@@ -78,6 +78,24 @@ main{padding:34px 0 60px}
 .hero p{margin:0 0 18px; color:var(--muted); max-width:70ch}
 .hero-actions{display:flex; gap:12px; flex-wrap:wrap}
 
+.hero-proof{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin: 14px 0 18px;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(34,48,68,0.9);
+  background: rgba(11,15,20,0.35);
+  color: var(--text);
+  font-size: 13px;
+}
+
 /* Sections */
 .section-title{margin:34px 0 10px; font-size:22px; font-family: "Space Grotesk", Inter, system-ui, sans-serif; letter-spacing:-0.2px}
 
