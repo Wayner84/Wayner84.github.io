@@ -254,6 +254,8 @@ main{padding:34px 0 60px}
 .vee-media-copy{margin-top:14px}
 .vee-media-copy strong{display:block; margin-bottom:6px; font-family: "Chakra Petch", "IBM Plex Sans", system-ui, sans-serif}
 .vee-media-copy p{margin:0; color:var(--muted)}
+.vee-inline-list{margin-top:6px}
+.vee-inline-list li + li{margin-top:4px}
 .vee-spec-cluster{display:flex; flex-wrap:wrap; gap:10px}
 .vee-spec-pill{
   min-width:110px;
