@@ -169,6 +169,47 @@ main{padding:34px 0 60px}
 .list{margin:8px 0 0; padding-left:18px; color:var(--muted)}
 .small{color:var(--muted); font-size:14px}
 
+/* Product pages / catalogue */
+.product-link{display:block; color:inherit}
+.product-link:hover{color:inherit}
+.product-link .card{height:100%}
+.product-card-cta{margin-top:14px; display:flex; align-items:center; justify-content:space-between; gap:12px}
+.product-card-cta .small{margin:0}
+.product-hero{display:grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr); gap:20px; align-items:start}
+.product-panel{
+  padding:18px;
+  border:1px solid rgba(34,48,68,0.9);
+  border-radius:var(--radius);
+  background: rgba(16,23,32,0.78);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+}
+.product-panel label{display:block; margin-bottom:6px; color:var(--muted); font-size:14px}
+.product-select{
+  width:100%;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid rgba(34,48,68,0.95);
+  background: rgba(11,15,20,0.75);
+  color:var(--text);
+  margin-bottom:14px;
+  font:inherit;
+}
+.price-box{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  padding:14px;
+  border:1px solid rgba(34,48,68,0.95);
+  border-radius:12px;
+  background: rgba(11,15,20,0.42);
+  margin-bottom:14px;
+}
+.price-box strong{font-size:28px; font-family: "Chakra Petch", "IBM Plex Sans", system-ui, sans-serif}
+.product-grid .card p{margin-bottom:0}
+@media (max-width: 900px){
+  .product-hero{grid-template-columns: 1fr}
+}
+
 /* Footer */
 .site-footer{border-top:1px solid rgba(34,48,68,0.7); padding:20px 0; margin-top:30px}
 .footer-inner{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
