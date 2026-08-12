@@ -13,7 +13,7 @@
 <div class="container header-inner">
 <a aria-label="Townsend Precision Labs — home" class="brand" href="index.html"><span class="brand-mark"><img alt="" class="logo" decoding="async" height="44" loading="eager" src="assets/img/logo.png" width="102"/></span><span class="brand-name">Townsend Precision Labs</span></a>
 <nav aria-label="Primary navigation" class="nav nav-desktop"><a href="capabilities.html">Capabilities</a><a aria-current="page" href="products.html">Products</a><a href="metrology-it.html">Metrology IT</a><a href="faq.html">FAQ</a><a class="tools-nav-link" href="https://wayner84.github.io/tools/">Tools</a><a class="btn" href="contact.html">Contact</a></nav>
-<details class="navDrop nav-mobile"><summary aria-label="Open navigation" class="navToggle"><span aria-hidden="true" class="navToggleIcon">☰</span><span class="navToggleText">Menu</span></summary><div aria-label="Mobile navigation" class="navPanel"><a href="capabilities.html">Capabilities</a><a aria-current="page" href="products.html">Products</a><a href="metrology-it.html">Metrology IT</a><a href="faq.html">FAQ</a><a class="tools-nav-link" href="https://wayner84.github.io/tools/">Tools</a><a class="btn" href="contact.html">Contact</a></div></details>
+<details class="navDrop nav-mobile"><summary aria-label="Menu" class="navToggle"><span aria-hidden="true" class="navToggleIcon">☰</span><span class="navToggleText">Menu</span></summary><div aria-label="Mobile navigation" class="navPanel"><a href="capabilities.html">Capabilities</a><a aria-current="page" href="products.html">Products</a><a href="metrology-it.html">Metrology IT</a><a href="faq.html">FAQ</a><a class="tools-nav-link" href="https://wayner84.github.io/tools/">Tools</a><a class="btn" href="contact.html">Contact</a></div></details>
 </div>
 </header>
 <main class="container product-detail" id="main-content">
@@ -24,15 +24,15 @@
 <h1>32.5 mm Stepped Height Adjuster</h1>
 <p class="small">Compact stepped support for quick setup, packing and fixture adjustment in lighter or more space-constrained setups.</p>
 </div>
-<a class="btn" href="contact.html">Request a quote</a>
+<a class="btn" href="contact.html?product=32.5+mm+Stepped+Height+Adjuster">Request a quote</a>
 </header>
 <section class="product-buybox">
 <div class="product-preview"><img alt="32.5 mm stepped height adjuster, 10 mm wide pair" class="vee-image" decoding="async" height="1536" id="ha325-image" loading="lazy" src="assets/img/products/height-adjuster-32-5-10mm.jpg" width="2048"/></div>
 <div class="product-panel clean-buy-panel">
 <label for="ha325-width">Width</label>
-<select aria-describedby="ha325-price-note" class="product-select" id="ha325-width"><option value="10">10 mm</option><option value="20">20 mm</option><option value="30">30 mm</option></select>
-<div class="price-box"><span class="small">Pair price</span><strong id="ha325-price">£5.00</strong><span class="small" id="ha325-price-note">ABS stepped height adjusters, supplied as a pair. Custom geometry available on request.</span></div>
-<a class="btn primary" href="contact.html">Request this size</a>
+<select aria-describedby="ha325-price ha325-price-note" class="product-select" id="ha325-width"><option value="10">10 mm</option><option value="20">20 mm</option><option value="30">30 mm</option></select>
+<div class="price-box"><span class="small">Pair price</span><strong aria-atomic="true" aria-live="polite" id="ha325-price">£5.00</strong><span class="small" id="ha325-price-note">ABS stepped height adjusters, supplied as a pair. Custom geometry available on request.</span></div>
+<a class="btn primary" href="contact.html?product=32.5+mm+Stepped+Height+Adjuster">Request this size</a>
 </div>
 </section>
 <section class="info-stack">
@@ -45,7 +45,7 @@
 </div>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>Townsend Precision Labs LTD</strong><p class="small">Engineering prototypes, workholding and metrology-minded support from Gloucester, UK.</p></div><nav aria-label="Footer navigation" class="footer-links"><a href="capabilities.html">Capabilities</a><a href="products.html">Products</a><a href="metrology-it.html">Metrology IT</a><a href="https://wayner84.github.io/tools/">Free browser tools</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav><div class="footer-legal"><p class="small">Registered in England and Wales · Company no. 15895757</p><p class="small">Registered office: 9 Deans Way, Gloucester, GL1 2PY</p><p class="small">© 2026 Townsend Precision Labs LTD.</p></div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><strong>Townsend Precision Labs LTD</strong><p class="small">Engineering prototypes, workholding and metrology-minded support from Gloucester, UK.</p></div><nav aria-label="Footer navigation" class="footer-links"><a href="capabilities.html">Capabilities</a><a href="products.html">Products</a><a href="metrology-it.html">Metrology IT</a><a href="https://wayner84.github.io/tools/">Free browser tools</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav><div class="footer-legal"><p class="small">Registered in England and Wales · Company no. 15895757</p><p class="small">© 2026 Townsend Precision Labs LTD.</p></div></div></footer>
 <script>
     const ha325Data = {
           "10": { price: "£5.00", image: "assets/img/products/height-adjuster-32-5-10mm.jpg", alt: "32.5 mm stepped height adjuster, 10 mm wide pair" },
@@ -64,5 +64,5 @@
     ha325Select.addEventListener('change', updateHa325);
     updateHa325();
   </script>
-</body>
+<script>(()=>{const select=document.getElementById('ha325-width');if(!select)return;const links=[...document.querySelectorAll('a[href^="contact.html?product="]')];const sync=()=>{const option=select.options[select.selectedIndex]?.text?.trim()||select.value;const query=new URLSearchParams({product:'32.5 mm Stepped Height Adjuster',option}).toString();links.forEach(link=>link.href=`contact.html?${query}`);};select.addEventListener('change',sync);sync();})();</script></body>
 </html>
