@@ -149,6 +149,10 @@ The August 2026 remediation keeps the site deliberately simple and fast while im
     - GitHub Pages currently uses legacy branch deployment. It is functioning and HTTPS-enforced.
     - A workflow artifact deployment would provide more explicit build/deploy gates, but is not urgent while the source is intentionally static and validation runs separately.
 
+13. **Response-header hardening**
+    - GitHub Pages supplies HSTS but does not currently return a site-defined Content Security Policy, frame-ancestors/X-Frame-Options, X-Content-Type-Options, Referrer-Policy or Permissions-Policy.
+    - This site has no forms, authentication or sensitive browser APIs, so the current risk is limited; however, these controls should be added if the site moves to a host/CDN that supports custom headers, particularly before introducing forms or third-party scripts.
+
 ## Areas Deliberately Not Changed
 
 - No customer proof, performance claims, certifications, tolerances, lead times or prices were invented.
